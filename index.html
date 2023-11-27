@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>LifeLine | A Humanitarian Organization</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png"/>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .logo {
+            width: 200px;
+        }
+        #donate {
+            background-color: rgb(0, 207, 0);
+            border-radius: 10px;
+        }
+        #volunteer {
+            background-color: rgb(255, 164, 180);
+            border-radius: 10px;
+        }
+        li {
+            font-size: medium;
+            font-weight: bold;
+            margin-left: 40px;
+        }
+        #caption1 {
+            position: absolute;
+            top: 40%;
+            right: 65%;
+            background-color: white;
+        }
+        #subcaption1 {
+            position: absolute;
+            top: 49%;
+            right: 76%;
+            font-size: larger;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(255, 164, 180);
+            text-decoration: none;
+            color: white;
+        }
+        #caption2 {
+            position: absolute;
+            top: 40%;
+            right: 60%;
+            background-color: white;
+        }
+        #subcaption2 {
+            position: absolute;
+            top: 49%;
+            right: 79%;
+            background-color: rgb(0, 207, 0);
+            font-size: larger;
+            padding: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        #subcaption2-1 {
+            position: absolute;
+            top: 49%;
+            right: 68%;
+            background-color: #0099ff;
+            font-size: larger;
+            padding: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        #caption3 {
+            position: absolute;
+            top: 30%;
+            right: 5%;
+            background-color: white;
+        }
+        #subcaption3 {
+            position: absolute;
+            top: 39%;
+            right: 14%;
+            background-color: #0099ff;
+            font-size: larger;
+            padding: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        #prevbutton {
+            margin-right: 90px;
+        }
+        #nextbutton {
+            margin-left: 90px;
+        }
+        .card-body {
+            text-align: center;
+            font-weight: bold;
+        }
+        .card-body a {
+            text-decoration: none;
+        }
+        #see-more {
+            display: inline-block;
+            margin-top: 30px;
+            background-color: rgb(94, 94, 94);
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        footer a {
+            color: white;
+        }
+        .socialmedia-icons {
+            width: 30px;
+        }
+        #footer-links {
+            display:inline-block;
+            margin-left: 80px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .footer-links2 {
+            text-decoration: none;
+        }
+        @media only screen and (max-width: 1199px) {
+            li {
+                margin-left: 10px;
+            }
+            #caption1 {
+                right: 61%;
+            }
+            #subcaption1 {
+                right: 73.5%;
+                top: 50%;
+            }
+            #caption2 {
+                right: 56%;
+            }
+            #subcaption2 {
+                right: 78%;
+                top: 50%;
+            }
+            #subcaption2-1 {
+                right: 65%;
+                top: 50%;
+            }
+            #caption3 {
+                right: 10%;
+            }
+            #subcaption3 {
+                right: 21%;
+                top: 41%;
+            }
+            #footer-links {
+                margin-left: 30px;
+            }
+        }
+        @media only screen and (max-width: 575px) {
+            #volunteer {
+                background-color: transparent;
+            }
+            #volunteer-link {
+                color: rgb(255, 164, 180);
+            }
+            #donate {
+                background-color: transparent;
+            }
+            #donate-link {
+                color: rgb(0, 207, 0);
+            }
+            #caption1 {
+                font-size: 15px;
+                right: 55%;
+            }
+            #subcaption1 {
+                font-size: xx-small;
+                padding: 2px;
+                top: 55%;
+                right: 69%;
+            }
+            #caption2 {
+                font-size: 15px;
+                right: 50%;
+
+            }
+            #subcaption2 {
+                font-size: xx-small;
+                padding: 2px;
+                top: 57%;
+                right: 77%;
+            }
+            #subcaption2-1{
+                font-size: xx-small;
+                padding: 2px;
+                top: 57%;
+                right: 59%;
+            }
+            #caption3 {
+                font-size: 15px;
+                right: 5%;
+            }
+            #subcaption3 {
+                font-size: xx-small;
+                padding: 2px;
+                top: 45%;
+                right: 18%;
+            }
+            #footer-links {
+                display:block;
+                margin-left:0px;
+                padding-top: 0px;
+                margin-top: 20px;
+            }
+            .footer-links2{
+                display:block;
+                text-align: center;
+                margin-top: 15px;
+            }
+            #footer-links span {
+                display:block;
+                text-align: center;
+                margin-top: 15px;
+            }
+            .socialmedia-icons {
+                margin-left: 22px;
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light col-lg-12">
+        <div class="container-fluid">
+            <!--LOGO-->
+            <a class="navbar-brand" href="index.html"><img src="img/lifeline-logo.png" alt="LifeLine Logo" class="logo"/></a>
+            <!--NAVBAR LINKS-->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#site_navbar"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="site_navbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item text-nowrap"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item text-nowrap"><a class="nav-link" href="#about-us">About Us</li></a>
+                <li class="nav-item text-nowrap"><a class="nav-link" href="initiatives.html">Initiatives</a></li>
+                <li class="nav-item text-nowrap" id="volunteer"><a class="nav-link" href="volunteer.html" id="volunteer-link">Volunteer</a></li>
+                <li class="nav-item text-nowrap" id="donate"><a class="nav-link" href="donate.html" id="donate-link">Donate</a></li>
+                <li class="nav-item text-nowrap"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <!--NAVBAR SEARCH BAR-->
+            <form class="d-flex">
+                <input type="search" placeholder="ex. Donate" class="form-control me-2"/>
+                <button class="btn btn-outline-primary" type="submit"><span class="material-symbols-outlined">Search</span></button>
+            </form>
+            </div>
+        </div>
+    </nav>
+    <!--HERO-->
+    <div class="carousel slide container-fluid" data-bs-ride="carousel" data-bs-interval="5000" id="lifeline-hero">
+        <div class="carousel-indicators">
+            <button data-bs-target="#lifeline-hero" data-bs-slide-to="0" class="active"></button>
+            <button data-bs-target="#lifeline-hero" data-bs-slide-to="1"></button>
+            <button data-bs-target="#lifeline-hero" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/volunteer-hero.jpg" alt="volunteer checking blood pressure" class="d-block w-100"/>
+                    <h1 id="caption1" class="text-nowrap">You can uplift lives!</h1>
+                    <a href="volunteer.html" id="subcaption1">Volunteer</a>
+            </div>
+            <div class="carousel-item">
+                <img src="img/earthquake-hero.jpg" alt="destroyed building and people" class="d-block w-100"/>
+                <h1 id="caption2" class="text-nowrap">Mindanao needs help.</h1>
+                <a href="donate.html" id="subcaption2">Donate</a>
+                <a href="#" id="subcaption2-1">Read more</a>
+            </div>
+            <div class="carousel-item">
+                <img src="img/initiatives-hero.jpg" alt="volunteer checking blood pressure" class="d-block w-100"/>
+                <h1 id="caption3">One step at a time</h1>
+                <a href="initiatives.html" id="subcaption3">Initiatives</a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#lifeline-hero" data-bs-slide="prev"><span id="prevbutton" class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#lifeline-hero" data-bs-slide="next"><span id="nextbutton" class="carousel-control-next-icon"></span></button>
+    </div>
+    <!--ABOUT US-->
+    <div class="container-fluid mt-5" id="about-us">
+        <div class="row">
+            <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                <h1 class="display-1" style="color:#0099ff">Who we are</h1>
+            </div>
+            <div class="col-lg-6">
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad atque veritatis maiores delectus tenetur dolores quia vel! A, tenetur commodi tempora qui impedit possimus laudantium ad molestiae, consectetur nihil dolore eum maxime similique cupiditate amet fugiat saepe non explicabo eos? Ut nisi ipsam obcaecati vel? Sed quos minus, quam eius, adipisci eligendi nesciunt porro nostrum ipsum sequi ea voluptate harum rem dignissimos sapiente. Aut debitis eum accusamus quasi quidem expedita praesentium magni perspiciatis nesciunt totam, ab deleniti error tenetur molestias eaque incidunt culpa pariatur voluptas iste vero dolorum nostrum rerum itaque. Officia vel commodi mollitia molestiae est, aspernatur quod! Veniam facere exercitationem, quibusdam quaerat praesentium eligendi molestiae est repudiandae aspernatur, et ratione, nobis vitae? Atque explicabo aspernatur, reiciendis provident in voluptatibus autem quos animi cupiditate. Placeat veritatis minus corporis fugit soluta voluptate explicabo suscipit hic, id officia nemo, deserunt ipsam quas. Odio soluta dolores officia esse facilis. Ea repellat dolorum amet dolores. Praesentium sed atque nulla, nam commodi dolorum. Ipsa rem voluptatibus officiis architecto, repellat, fuga earum culpa, inventore incidunt eos in nihil eum quae doloremque doloribus est a id? Et expedita aliquid possimus ea, repellat a nam optio facilis magnam odio aliquam explicabo rerum tempore distinctio modi corrupti doloremque?</p>
+            </div>
+        </div>
+    </div>
+    <!--INITIATIVES-->
+    <div class="container-fluid mt-5" style="background-color: #bfe5ff; text-align: center; padding-bottom: 25px;" id="initiatives">
+        <h1 class="display-1" style="color: rgb(94, 94, 94); padding-top: 15px;">What we do</h1>
+        <div class="row d-flex justify-content-evenly mt-4">
+            <div class="col-lg-3">
+                <div class="card">
+                    <img src="img/volunteer-hero.jpg" class="card-img-top" alt="folder"/>
+                    <div class="card-body">
+                        <p>My Portfolio</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <img src="img/volunteer-hero.jpg" class="card-img-top" alt="folder"/>
+                    <div class="card-body">
+                        <p>My Portfolio</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <img src="img/volunteer-hero.jpg" class="card-img-top" alt="folder"/>
+                    <div class="card-body">
+                        <p>My Portfolio</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="initiatives.html" id="see-more">See more</a>
+    </div>
+    <!--FOOTER-->
+    <footer class="container-fluid" style="background-color: rgb(63, 63, 63)">
+        <a href="index.html"><img src="img/lifeline-logo.png" alt="LifeLine Logo" class="logo"/></a>
+        <div class="row" id="footer-links">
+        <a href="donate.html" class="footer-links2">Donate</a>
+        <a href="volunteer.html" class="footer-links2">Volunteer</a>
+        <a href="contact-us.html" class="footer-links2">Contact Us</a>
+        <a href="#" class="footer-links2">Careers</a>
+        <a href="#" class="footer-links2">Subscribe</a>
+        <span style="color:white">|</span>
+        <span style="color: #0099ff">Follow us:</span>
+        <a href="#"><img src="img/fb.png" alt="fb icon" class="socialmedia-icons"/></a>
+        <a href="#"><img src="img/ig.png" alt="ig icon" class="socialmedia-icons"/></a>
+        <a href="#"><img src="img/twitter.png" alt="twitter icon" class="socialmedia-icons"/></a>
+        <a href="#"><img src="img/youtube.png" alt="youtube icon" class="socialmedia-icons"/></a>
+        </div>
+    </footer>
+</body>
+</html>

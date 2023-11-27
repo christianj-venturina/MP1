@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>LifeLine | A Humanitarian Organization</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png"/>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .logo {
+            width: 200px;
+        }
+        #donate {
+            background-color: rgb(0, 207, 0);
+            border-radius: 10px;
+        }
+        #volunteer {
+            background-color: rgb(255, 164, 180);
+            border-radius: 10px;
+        }
+        li {
+            font-size: medium;
+            font-weight: bold;
+            margin-left: 40px;
+        }
+        footer a {
+            color: white;
+        }
+        .socialmedia-icons {
+            width: 30px;
+        }
+        .row {
+            margin-top: 20px;
+        }
+        .h1 {
+            margin-top: 20px;
+        }
+        #footer-links {
+            display:inline-block;
+            margin-left: 80px;
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+        .footer-links2 {
+            text-decoration: none;
+        }
+        #payment1 {
+            text-decoration: none;
+            color: white;
+            background-color: #0099ff;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        #payment2 {
+            text-decoration: none;
+            color: white;
+            background-color: #0099ff;
+            margin-left: 30px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        #payment3 {
+            text-decoration: none;
+            color: white;
+            background-color: #0099ff;
+            margin-left: 30px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        @media only screen and (max-width: 1199px) {
+            li {
+                margin-left: 10px;
+            }
+            #footer-links {
+                margin-left: 30px;
+            }
+        }
+        @media only screen and (max-width: 575px) {
+            #volunteer {
+                background-color: transparent;
+            }
+            #volunteer-link {
+                color: rgb(255, 164, 180);
+            }
+            #donate {
+                background-color: transparent;
+            }
+            #donate-link {
+                color: rgb(0, 207, 0);
+            }
+            #footer-links {
+                display:block;
+                margin-left:0px;
+                padding-top: 0px;
+                margin-top: 20px;
+            }
+            .footer-links2{
+                display:block;
+                text-align: center;
+                margin-top: 15px;
+            }
+            #footer-links span {
+                display:block;
+                text-align: center;
+                margin-top: 15px;
+            }
+            .socialmedia-icons {
+                margin-left: 22px;
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light col-lg-12">
+        <div class="container-fluid">
+            <!--LOGO-->
+            <a class="navbar-brand" href="index.html"><img src="img/lifeline-logo.png" alt="LifeLine Logo" class="logo"/></a>
+            <!--NAVBAR LINKS-->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#site_navbar"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="site_navbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item text-nowrap"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item text-nowrap"><a class="nav-link" href="index.html #about-us">About Us</li></a>
+                <li class="nav-item text-nowrap"><a class="nav-link" href="initiatives.html">Initiatives</a></li>
+                <li class="nav-item text-nowrap" id="volunteer"><a class="nav-link" href="volunteer.html" id="volunteer-link">Volunteer</a></li>
+                <li class="nav-item text-nowrap" id="donate"><a class="nav-link" href="donate.html" id="donate-link">Donate</a></li>
+                <li class="nav-item text-nowrap"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <!--NAVBAR SEARCH BAR-->
+            <form class="d-flex">
+                <input type="search" placeholder="ex. Donate" class="form-control me-2"/>
+                <button class="btn btn-outline-primary" type="submit"><span class="material-symbols-outlined">Search</span></button>
+            </form>
+            </div>
+        </div>
+    </nav>
+    <!--HEADER PICTURE-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <img src="img/donate.jpg" alt="donation box" class="img-fluid" style="width: 800px; height: 400px"/>
+            </div>
+        </div>
+    </div>
+    <!--FORM-->
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-lg-12">
+                    <label>How often do you want to donate?</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <input type="radio" class="form-check-input" name="donation" value="monthly" id="monthly">
+                    <label class="form-check-label" for="monthly">Monthly</label>
+                </div>
+                <div class="col-lg-2">
+                    <input type="radio" class="form-check-input" name="donation" value="weekly" id="weekly">
+                    <label class="form-check-label" for="weekly">Weekly</label>
+                </div>
+                <div class="col-lg-2">
+                    <input type="radio" class="form-check-input" name="donation" value="once" id="once">
+                    <label class="form-check-label" for="once">Once</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <label class="form-label">Set amount:</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <span class="input-group-text">₱</span>
+                        <input type="number" class="form-control" id="tip" />
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <label class="form-label">Select your payment method:</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 mb-3">
+                    <a href="#" id="payment1">Credit/Debit Card</a>
+                    <a href="#" id="payment2">PayPal</a>
+                    <a href="#" id="payment3">GCash</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--FOOTER-->
+    <footer class="container-fluid" style="background-color: rgb(63, 63, 63)">
+        <a href="index.html"><img src="img/lifeline-logo.png" alt="LifeLine Logo" class="logo"/></a>
+        <div class="row" id="footer-links">
+        <a href="donate.html" class="footer-links2">Donate</a>
+        <a href="volunteer.html" class="footer-links2">Volunteer</a>
+        <a href="contact-us.html" class="footer-links2">Contact Us</a>
+        <a href="#" class="footer-links2">Careers</a>
+        <a href="#" class="footer-links2">Subscribe</a>
+        <span style="color:white">|</span>
+        <span style="color: #0099ff">Follow us:</span>
+        <a href="#"><img src="img/fb.png" alt="fb icon" class="socialmedia-icons"/></a>
+        <a href="#"><img src="img/ig.png" alt="ig icon" class="socialmedia-icons"/></a>
+        <a href="#"><img src="img/twitter.png" alt="twitter icon" class="socialmedia-icons"/></a>
+        <a href="#"><img src="img/youtube.png" alt="youtube icon" class="socialmedia-icons"/></a>
+        </div>
+    </footer>
+</body>
+</html>

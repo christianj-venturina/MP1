@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>LifeLine | A Humanitarian Organization</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png"/>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .logo {
+            width: 200px;
+        }
+        #donate {
+            background-color: rgb(0, 207, 0);
+            border-radius: 10px;
+        }
+        #volunteer {
+            background-color: rgb(255, 164, 180);
+            border-radius: 10px;
+        }
+        li {
+            font-size: medium;
+            font-weight: bold;
+            margin-left: 40px;
+        }
+        footer a {
+            color: white;
+        }
+        .socialmedia-icons {
+            width: 30px;
+        }
+        .row {
+            margin-top: 20px;
+        }
+        .h1 {
+            margin-top: 20px;
+        }
+        #footer-links {
+            display:inline-block;
+            margin-left: 80px;
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+        .footer-links2 {
+            text-decoration: none;
+        }
+        @media only screen and (max-width: 1199px) {
+            li {
+                margin-left: 10px;
+            }
+            #footer-links {
+                margin-left: 30px;
+            }
+        }
+        @media only screen and (max-width: 575px) {
+            #volunteer {
+                background-color: transparent;
+            }
+            #volunteer-link {
+                color: rgb(255, 164, 180);
+            }
+            #donate {
+                background-color: transparent;
+            }
+            #donate-link {
+                color: rgb(0, 207, 0);
+            }
+            #footer-links {
+                display:block;
+                margin-left:0px;
+                padding-top: 0px;
+                margin-top: 20px;
+            }
+            .footer-links2{
+                display:block;
+                text-align: center;
+                margin-top: 15px;
+            }
+            #footer-links span {
+                display:block;
+                text-align: center;
+                margin-top: 15px;
+            }
+            .socialmedia-icons {
+                margin-left: 22px;
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light col-lg-12">
+        <div class="container-fluid">
+            <!--LOGO-->
+            <a class="navbar-brand" href="index.html"><img src="img/lifeline-logo.png" alt="LifeLine Logo" class="logo"/></a>
+            <!--NAVBAR LINKS-->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#site_navbar"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="site_navbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item text-nowrap"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item text-nowrap"><a class="nav-link" href="index.html #about-us">About Us</li></a>
+                <li class="nav-item text-nowrap"><a class="nav-link" href="initiatives.html">Initiatives</a></li>
+                <li class="nav-item text-nowrap" id="volunteer"><a class="nav-link" href="volunteer.html" id="volunteer-link">Volunteer</a></li>
+                <li class="nav-item text-nowrap" id="donate"><a class="nav-link" href="donate.html" id="donate-link">Donate</a></li>
+                <li class="nav-item text-nowrap"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <!--NAVBAR SEARCH BAR-->
+            <form class="d-flex">
+                <input type="search" placeholder="ex. Donate" class="form-control me-2"/>
+                <button class="btn btn-outline-primary" type="submit"><span class="material-symbols-outlined">Search</span></button>
+            </form>
+            </div>
+        </div>
+    </nav>
+    <!--HEADER PICTURE-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <img src="img/volunteer.png" alt="raised arms" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <!--FORM-->
+    <div class="container mt-5">
+        <form>
+            <h1>Personal Information</h1>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="name">First name:</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="name" placeholder="ex. Juan"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="middle name">Middle name:</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="middle name" placeholder="ex. Perez"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="last name">Last name:</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="last name" placeholder="ex. Dela Cruz"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="civil-status">Civil status:</label>
+                </div>
+                <div class="col-lg-10">
+                    <select class="form-select" id="civil-status">
+                        <option disabled selected>Select one...</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="widowed">Widowed</option>
+                        <option value="separated">Separated</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="nationality">Nationality:</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="nationality" placeholder="ex. Filipino"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="gender">Gender:</label>
+                </div>
+                <div class="col-lg-10">
+                    <select class="form-select" id="gender">
+                        <option selected disabled>Select one...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <h1 class="h1">Location & Contact</h1>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="region">Region:</label>
+                </div>
+                <div class="col-lg-10">
+                    <select class="form-select" id="region">
+                        <option disabled selected>Select one...</option>
+                        <option value="NCR">National Capital Region</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="city">City:</label>
+                </div>
+                <div class="col-lg-10">
+                    <select class="form-select" id="city">
+                        <option disabled selected>Select one...</option>
+                        <option value="muntinlupa">Muntinlupa</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="barangay">Barangay:</label>
+                </div>
+                <div class="col-lg-10">
+                    <select class="form-select" id="barangay">
+                        <option disabled selected>Select one...</option>
+                        <option value="tunasan">Tunasan</option>
+                        <option value="poblacion">Poblacion</option>
+                        <option value="putatan">Putatan</option>
+                        <option value="bayanan">Bayanan</option>
+                        <option value="alabang">Alabang</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="address">Address:</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="address" placeholder="ex. 123, Straight Street, Barangay Poblacion, Muntinlupa City"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="landline">Landline:</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="landline" placeholder="ex. 8-123-4567"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="mobile">Mobile:</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="mobile" placeholder="ex. +639987654321"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="email" placeholder="ex. juan.delacruz@gmail.com"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="facebook">Facebook:</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="facebook" placeholder="ex. facebook.com/juandelacruz"/>
+                </div>
+            </div>
+            <h1 class="h1">Upload Valid ID</h1>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="id">Type of ID:</label>
+                </div>
+                <div class="col-lg-10">
+                    <select class="form-select" id="id">
+                        <option disabled selected>Select one...</option>
+                        <option value="driver's">Driver's license</option>
+                        <option value="passport">Passport</option>
+                        <option value="sss">SSS</option>
+                        <option value="hmdf">HMDF</option>
+                        <option value="philhealth">PhilHealth</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label>Upload ID:</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="file"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 mb-2" style="text-align: center;">
+                    <input type="submit" class="btn btn-primary"/>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--FOOTER-->
+    <footer class="container-fluid" style="background-color: rgb(63, 63, 63)">
+        <a href="index.html"><img src="img/lifeline-logo.png" alt="LifeLine Logo" class="logo"/></a>
+        <div class="row" id="footer-links">
+        <a href="donate.html" class="footer-links2">Donate</a>
+        <a href="volunteer.html" class="footer-links2">Volunteer</a>
+        <a href="contact-us.html" class="footer-links2">Contact Us</a>
+        <a href="#" class="footer-links2">Careers</a>
+        <a href="#" class="footer-links2">Subscribe</a>
+        <span style="color:white">|</span>
+        <span style="color: #0099ff">Follow us:</span>
+        <a href="#"><img src="img/fb.png" alt="fb icon" class="socialmedia-icons"/></a>
+        <a href="#"><img src="img/ig.png" alt="ig icon" class="socialmedia-icons"/></a>
+        <a href="#"><img src="img/twitter.png" alt="twitter icon" class="socialmedia-icons"/></a>
+        <a href="#"><img src="img/youtube.png" alt="youtube icon" class="socialmedia-icons"/></a>
+        </div>
+    </footer>
+</body>
+</html>
