@@ -57,23 +57,19 @@
         }
         #payment1 {
             text-decoration: none;
-            color: white;
-            background-color: #0099ff;
+            background-color: rgb(209, 209, 209);
             padding: 5px;
             border-radius: 10px;
+            color: black;
         }
         #payment2 {
-            text-decoration: none;
-            color: white;
-            background-color: #0099ff;
+            background-color: rgb(209, 209, 209);
             margin-left: 30px;
             padding: 5px;
             border-radius: 10px;
         }
         #payment3 {
-            text-decoration: none;
-            color: white;
-            background-color: #0099ff;
+            background-color: rgb(209, 209, 209);
             margin-left: 30px;
             padding: 5px;
             border-radius: 10px;
@@ -118,6 +114,20 @@
             .socialmedia-icons {
                 margin-left: 22px;
                 margin-top: 15px;
+            }
+        }
+        @media only screen and (max-width: 991px) {
+            #volunteer {
+                background-color: transparent;
+            }
+            #volunteer-link {
+                color: rgb(255, 164, 180);
+            }
+            #donate {
+                background-color: transparent;
+            }
+            #donate-link {
+                color: rgb(0, 207, 0);
             }
         }
     </style>
@@ -197,9 +207,9 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 mb-3">
-                    <a href="#" id="payment1">Credit/Debit Card</a>
-                    <a href="#" id="payment2">PayPal</a>
-                    <a href="#" id="payment3">GCash</a>
+                    <a href="#" id="payment1"><img src="img/card.png" style="width: 30px"/> Credit/Debit Card</a>
+                    <a href="#" id="payment2"><img src="img/paypal.png" style="width: 100px"/></a>
+                    <a href="#" id="payment3"><img src="img/gcash.png" style="width: 120px"/></a>
                 </div>
             </div>
         </form>
